@@ -1,0 +1,230 @@
+import './Static files/template.css'
+import Gallery from './Gallery'
+import { NavLink } from 'react-router-dom'
+
+
+
+
+
+
+export default function Layout() {
+    return (
+        <>
+            {/* Navbar */}
+            <div className="d-none d-lg-block">
+                <nav id="#myNavbar" className="navbar navbar-expand-lg w-75 mt-3 mx-auto bg-transparent">
+                    <div className="container-fluid">
+                        <NavLink to="/"
+                            style={{
+                                fontFamily: '"Inconsolata", monospace',
+                                color: "white",
+                                fontSize: "1.7em"
+                            }}
+                            className="navbar-brand me-2 "
+                            href="#scrollToHome"
+                        >
+                            PAINTER & ILLUSTRATOR
+                        </NavLink>
+                        <button
+                            className="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span className="navbar-toggler-icon" />
+                        </button>
+                        <div
+                            className="collapse navbar-collapse"
+                            id="navbarSupportedContent"
+                        >
+                            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li className="nav-item ms-3 ">
+                                    <NavLink to="/Gallery"
+                                        className="text1"
+                                        aria-current="page"
+                                        href={Gallery}
+                                    >
+                                        GALLERY
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item ms-3">
+                                    <NavLink to="/About" className="text1" href="#scrollToAbout">
+                                        ABOUT
+                                    </NavLink>
+                                </li>
+                                {/* <li className="nav-item  ms-3">
+                                    <NavLink to="/About" className="text1" href="#scrollToAbout">
+                                        SERVICES
+                                    </NavLink>
+                                </li> */}
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            {/* Responsive navbar for tablet */}
+            <div className="d-none d-sm-block d-lg-none">
+                <nav className="navbar navbar-expand-xl bg-transparent">
+                    <div className="container-fluid">
+                        <a
+                            style={{
+                                fontFamily: '"Inconsolata", monospace',
+                                color: "white",
+                                fontSize: "1.4em"
+                            }}
+                            className="responsiveNavbarBrand navbar-brand d-none d-sm-block d-xl-none me-2  w-75"
+                            href="#"
+                        >
+                            Painter &amp; Illustrator
+                        </a>
+                        <a
+                            style={{ fontSize: "3em" }}
+                            className="toggleBtn btn navbar-toggler ms-auto"
+                            type="button"
+                            href="index.html"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#navbarNavOffCanvas"
+                            aria-controls="navbarNavOffCanvas"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <i className="bi bi-list text-white" />
+                        </a>
+                        <div
+                            style={{ backgroundColor: "#161A30", transitionDuration: "0.3s" }}
+                            className="offcanvas offcanvas-top ms-auto d-xl-none w-100 h-100"
+                            tabIndex={-1}
+                            id="navbarNavOffCanvas"
+                            aria-labelledby="offcanvasNavbarLabel"
+                        >
+                            <div className="offcanvas-header">
+                                <h1
+                                    style={{
+                                        fontFamily: '"Oswald", sans-serif',
+                                        color: "white",
+                                        fontWeight: 600,
+                                        fontSize: "2em",
+                                        textDecoration: "none"
+                                    }}
+                                    className="mt-2 me-auto text-start "
+                                >
+                                    PARVIZ ALIYEV
+                                </h1>
+                                <button
+                                    type="button"
+                                    style={{ color: "white", fontSize: "2em" }}
+                                    className="btn-close btn-close-white"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                />
+                            </div>
+                            <hr className="d-md-none" />
+                            <div className="offcanvas-body d-flex justify-content-center align-items-center">
+                                <ul className="navbar-nav mx-auto text-center h-100">
+                                    <li className="nav-item mt-auto">
+                                        <NavLink to="/Gallery" className="textResponsiveNavbar text-white">
+                                            GALLERY
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="textResponsiveNavbar text-white">
+                                            ABOUT
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item mt-auto">
+                                        <a className="bookMe btn btn-outline-light" href="#">
+                                            BOOK ME!
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            {/* Responsive navbar for very small device (Iphone 5/6/7/8 ) and another phones*/}
+            <div className="d-block d-sm-none d-md-none">
+                <div className="container-fluid">
+                    <div className="d-flex">
+                        <a
+                            style={{
+                                fontFamily: '"Inconsolata", monospace',
+                                color: "white",
+                                fontSize: "1.2em"
+                            }}
+                            className="navbar-brand d-block d-sm-none me-2 mt-1  w-75"
+                            href="#"
+                        >
+                            Painter &amp; Illustrator
+                        </a>
+                        <button
+                            style={{ fontSize: "1.6em" }}
+                            className="navbar-toggler ms-auto mt-1"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#responsiveNavbarNavOffCanvas"
+                            aria-controls="responsiveNavbarNavOffCanvas"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <i className="bi bi-list text-white" />
+                        </button>
+                    </div>
+                    <div
+                        style={{ backgroundColor: "#161A30", transitionDuration: "0.3s" }}
+                        className="offcanvas offcanvas-top ms-auto d-xl-none w-100 h-100"
+                        tabIndex={-1}
+                        id="responsiveNavbarNavOffCanvas"
+                        aria-labelledby="offcanvasNavbarLabel"
+                    >
+                        <div className="offcanvas-header">
+                            <h1
+                                style={{
+                                    fontFamily: '"Oswald", sans-serif',
+                                    color: "white",
+                                    fontWeight: 600,
+                                    fontSize: "2em",
+                                    textDecoration: "none"
+                                }}
+                                className="mt-2 me-auto text-start "
+                            >
+                                PARVIZ ALIYEV
+                            </h1>
+                            <button
+                                type="button"
+                                style={{ color: "white", fontSize: "2em" }}
+                                className="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            />
+                        </div>
+                        <hr className="d-md-none" />
+                        <div className="offcanvas-body d-flex justify-content-center align-items-center">
+                            <ul className="navbar-nav mx-auto text-center h-100">
+                                <li className="nav-item mt-auto">
+                                    <a className="textResponsiveNavbar text-white" href="#">
+                                        GALLERY
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="textResponsiveNavbar text-white" href="#">
+                                        ABOUT
+                                    </a>
+                                </li>
+                                <li className="nav-item mt-auto">
+                                    <a className="bookMe btn btn-outline-light" href="#">
+                                        BOOK ME!
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </>
+    )
+}

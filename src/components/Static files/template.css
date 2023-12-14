@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* .BodyDiv {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #161A30;
+} */
+
+
+/* #Gallery{
+    background-color: #161A30;
+    height: 100vh;
+} */
+
+
+
+.textResponsiveNavbar {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.text1 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-decoration: none;
+    position: relative;
+}
+
+.text1:hover {
+    color: white;
+}
+
+
+.text1::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #3081D0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.text1:hover::after{
+    opacity: 1;
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+#personalImage {
+    border-color: white;
+    border: 10px;
+    animation-name: imgAnimation;
+    animation-duration: 4s;
+}
+
+.WorksImg {
+}
+
+
+.WorksText {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+.waviy {
+    position: relative;
+    /* -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2)); */
+    font-size: 60px;
+}
+
+.waviy span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 450;
+    font-size: 0.5em;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+.waviyTablet {
+    position: relative;
+    /* -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2)); */
+    font-size: 60px;
+}
+
+.waviyTablet span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 450;
+    font-size: 0.5em;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+
+.myWork {
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+
+
+
+.bookMe {
+    border-radius: 15%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+/* .toggleBtn:hover .bookMe{
+    border-radius: 15%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.1s;
+} */
+
+
+.SosilMediaIcon {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    transition-duration: 0.3s;
+}
+
+.SosilMediaIcon:hover {
+    cursor: pointer;
+    color: #3081D0;
+    font-size: 1.2em;
+    transition-duration: 0.3s;
+}
+
+
+.TextRow h1 {
+    text-align: center;
+    margin: 20px 0px 20px;
+    color: #fff;
+    font-size: 6em;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
