@@ -1,6 +1,7 @@
 import './Static files/template.css'
 import Gallery from './Gallery'
 import { NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 
@@ -8,6 +9,14 @@ import { NavLink } from 'react-router-dom'
 
 
 export default function Layout() {
+
+    useEffect(() => {
+        document.getElementById('link').addEventListener('click', function () {
+            var offcanvas = document.getElementById('navbarNavOffCanvas');
+            offcanvas.hide();
+        });
+
+    }, []);
     return (
         <>
             {/* Navbar */}
@@ -126,12 +135,12 @@ export default function Layout() {
                             <div className="offcanvas-body d-flex justify-content-center align-items-center">
                                 <ul className="navbar-nav mx-auto text-center h-100">
                                     <li className="nav-item mt-auto">
-                                        <NavLink to="/Gallery" className="textResponsiveNavbar text-white">
+                                        <NavLink id='link' to="/Gallery" className="textResponsiveNavbar text-white">
                                             GALLERY
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="/About" className="textResponsiveNavbar text-white">
+                                        <NavLink id='link' to="/About" className="textResponsiveNavbar text-white">
                                             ABOUT
                                         </NavLink>
                                     </li>
@@ -166,8 +175,8 @@ export default function Layout() {
                             className="navbar-toggler ms-auto mt-1"
                             type="button"
                             data-bs-toggle="offcanvas"
-                            data-bs-target="#responsiveNavbarNavOffCanvas"
-                            aria-controls="responsiveNavbarNavOffCanvas"
+                            data-bs-target="#navbarNavOffCanvas"
+                            aria-controls="navbarNavOffCanvas"
                             aria-expanded="false"
                             aria-label="Toggle navigation"
                         >
@@ -178,7 +187,7 @@ export default function Layout() {
                         style={{ backgroundColor: "#161A30", transitionDuration: "0.3s" }}
                         className="offcanvas offcanvas-top ms-auto d-xl-none w-100 h-100"
                         tabIndex={-1}
-                        id="responsiveNavbarNavOffCanvas"
+                        id="navbarNavOffCanvas"
                         aria-labelledby="offcanvasNavbarLabel"
                     >
                         <div className="offcanvas-header">
@@ -206,12 +215,12 @@ export default function Layout() {
                         <div className="offcanvas-body d-flex justify-content-center align-items-center">
                             <ul className="navbar-nav mx-auto text-center h-100">
                                 <li className="nav-item mt-auto">
-                                    <NavLink to="/Gallery" className="textResponsiveNavbar text-white">
+                                    <NavLink id='link' to="/Gallery" className="textResponsiveNavbar text-white">
                                         GALLERY
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/About" className="textResponsiveNavbar text-white">
+                                    <NavLink id='link' to="/About" className="textResponsiveNavbar text-white">
                                         ABOUT
                                     </NavLink>
                                 </li>
