@@ -40,6 +40,7 @@ export default function Gallery() {
                         <iframe src='https://res.cloudinary.com/dkeckqqcp/video/upload/v1702072803/parvizaliyev/workvideo2_1_ee46qw.mp4' height="300" />
                     </div>
                 </div>
+                <hr className='text-white mt-5 ' />
                 <div style={{ fontSize: "2em" }} className="myWork container container-fluid mt-5">
                     Bunlar mənim təhvil verdiyim bəzi işlərdir
                 </div>
@@ -154,7 +155,57 @@ export default function Gallery() {
                         <img src={work9} />
                     </div>
                 </div>
-
+                <hr className='text-white mt-5 ' />
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}
+                    className="mt-3"
+                >
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://instagram.com/pako.aliyev"
+                        // target="_blank"
+                        className="h-50 text-white"
+                    >
+                        <i className="bi bi-instagram" />
+                    </a>
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://tiktok.com"
+                        // target="_blank"
+                        className="h-50 text-white ms-4 "
+                    >
+                        <i className="bi bi-tiktok" />
+                    </a>
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://facebook.com"
+                        // target="_blank"
+                        className="h-50 text-white ms-4 "
+                    >
+                        <i className="bi bi-facebook" />
+                    </a>
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://twitter.com"
+                        // target="_blank"
+                        className="h-50 text-white ms-4  "
+                    >
+                        <i className="bi bi-twitter" />
+                    </a>
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://wa.me/+994775966907"
+                        // target="_blank"
+                        className="h-50 text-white ms-4  "
+                    >
+                        <i className="bi bi-whatsapp" />
+                    </a>
+                </div>
+                <hr style={{ color: "transparent" }} />
             </div>
 
             {/* Gallery page for Phone */}
@@ -227,6 +278,57 @@ export default function Gallery() {
                         <img src={work9} />
                     </div>
                 </div>
+                <hr className='text-white mt-5 ' />
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}
+                    className="mt-3"
+                >
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://instagram.com/pako.aliyev"
+                        // target="_blank"
+                        className="h-50 text-white"
+                    >
+                        <i className="bi bi-instagram" />
+                    </a>
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://tiktok.com"
+                        // target="_blank"
+                        className="h-50 text-white ms-4 "
+                    >
+                        <i className="bi bi-tiktok" />
+                    </a>
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://facebook.com"
+                        // target="_blank"
+                        className="h-50 text-white ms-4 "
+                    >
+                        <i className="bi bi-facebook" />
+                    </a>
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://twitter.com"
+                        // target="_blank"
+                        className="h-50 text-white ms-4  "
+                    >
+                        <i className="bi bi-twitter" />
+                    </a>
+                    <a
+                        style={{ cursor: "pointer" }}
+                        href="https://wa.me/+994775966907"
+                        // target="_blank"
+                        className="h-50 text-white ms-4  "
+                    >
+                        <i className="bi bi-whatsapp" />
+                    </a>
+                </div>
+                <hr style={{ color: "transparent" }} />
             </div>
 
         </>

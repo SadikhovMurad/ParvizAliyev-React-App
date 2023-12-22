@@ -64,6 +64,7 @@ export default function Layout() {
                         </div>
                     </div>
                 </nav>
+                
             </div>
             {/* Responsive navbar for tablet */}
             <div className="d-none d-sm-block d-lg-none">
