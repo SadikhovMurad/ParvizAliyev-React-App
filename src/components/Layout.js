@@ -64,7 +64,7 @@ export default function Layout() {
                         </div>
                     </div>
                 </nav>
-                
+
             </div>
             {/* Responsive navbar for tablet */}
             <div className="d-none d-sm-block d-lg-none">
@@ -131,7 +131,7 @@ export default function Layout() {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="textResponsiveNavbar text-white">
+                                        <NavLink to="/About" className="textResponsiveNavbar text-white">
                                             ABOUT
                                         </NavLink>
                                     </li>
@@ -206,14 +206,14 @@ export default function Layout() {
                         <div className="offcanvas-body d-flex justify-content-center align-items-center">
                             <ul className="navbar-nav mx-auto text-center h-100">
                                 <li className="nav-item mt-auto">
-                                    <a className="textResponsiveNavbar text-white" href="#">
+                                    <NavLink to="/Gallery" className="textResponsiveNavbar text-white">
                                         GALLERY
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="textResponsiveNavbar text-white" href="#">
+                                    <NavLink to="/About" className="textResponsiveNavbar text-white">
                                         ABOUT
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item mt-auto">
                                     <a className="bookMe btn btn-outline-light" href="#">
