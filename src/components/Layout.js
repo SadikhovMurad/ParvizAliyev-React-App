@@ -88,7 +88,6 @@ export default function Layout() {
                             style={{ fontSize: "3em" }}
                             className="toggleBtn btn navbar-toggler ms-auto"
                             type="button"
-                            href="index.html"
                             data-bs-toggle="offcanvas"
                             data-bs-target="#navbarNavOffCanvas"
                             aria-controls="navbarNavOffCanvas"
@@ -101,7 +100,6 @@ export default function Layout() {
                             style={{ backgroundColor: "#161A30", transitionDuration: "0.3s" }}
                             className="offcanvas offcanvas-top ms-auto d-xl-none w-100 h-100"
                             tabIndex={-1}
-                            data-bs-dismiss="offcanvas"
                             id="navbarNavOffCanvas"
                             aria-labelledby="offcanvasNavbarLabel"
                         >
@@ -182,7 +180,6 @@ export default function Layout() {
                         style={{ backgroundColor: "#161A30", transitionDuration: "0.3s" }}
                         className="offcanvas offcanvas-top ms-auto d-xl-none w-100 h-100"
                         tabIndex={-1}
-                        data-bs-dismiss="offcanvas"
                         id="navbarNavOffCanvas"
                         aria-labelledby="offcanvasNavbarLabel"
                     >
