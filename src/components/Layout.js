@@ -10,13 +10,7 @@ import { useEffect } from 'react'
 
 export default function Layout() {
 
-    useEffect(() => {
-        document.getElementById('link').addEventListener('click', function () {
-            var offcanvas = document.getElementById('navbarNavOffCanvas');
-            offcanvas.hide();
-        });
 
-    }, []);
     return (
         <>
             {/* Navbar */}
@@ -107,6 +101,7 @@ export default function Layout() {
                             style={{ backgroundColor: "#161A30", transitionDuration: "0.3s" }}
                             className="offcanvas offcanvas-top ms-auto d-xl-none w-100 h-100"
                             tabIndex={-1}
+                            data-bs-dismiss="offcanvas"
                             id="navbarNavOffCanvas"
                             aria-labelledby="offcanvasNavbarLabel"
                         >
@@ -187,6 +182,7 @@ export default function Layout() {
                         style={{ backgroundColor: "#161A30", transitionDuration: "0.3s" }}
                         className="offcanvas offcanvas-top ms-auto d-xl-none w-100 h-100"
                         tabIndex={-1}
+                        data-bs-dismiss="offcanvas"
                         id="navbarNavOffCanvas"
                         aria-labelledby="offcanvasNavbarLabel"
                     >
