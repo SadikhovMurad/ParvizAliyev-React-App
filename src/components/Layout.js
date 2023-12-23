@@ -73,17 +73,17 @@ export default function Layout() {
             <div className="d-none d-sm-block d-lg-none">
                 <nav className="navbar navbar-expand-xl bg-transparent">
                     <div className="container-fluid">
-                        <a
+                        <NavLink to="/"
                             style={{
                                 fontFamily: '"Inconsolata", monospace',
                                 color: "white",
                                 fontSize: "1.4em"
                             }}
                             className="responsiveNavbarBrand navbar-brand d-none d-sm-block d-xl-none me-2  w-75"
-                            href="#"
+                            
                         >
                             Painter &amp; Illustrator
-                        </a>
+                        </NavLink>
                         <a
                             style={{ fontSize: "3em" }}
                             className="toggleBtn btn navbar-toggler ms-auto"
@@ -152,17 +152,17 @@ export default function Layout() {
             <div className="d-block d-sm-none d-md-none">
                 <div className="container-fluid">
                     <div className="d-flex">
-                        <a
+                        <NavLink to="/"
                             style={{
                                 fontFamily: '"Inconsolata", monospace',
                                 color: "white",
                                 fontSize: "1.2em"
                             }}
                             className="navbar-brand d-block d-sm-none me-2 mt-1  w-75"
-                            href="#"
+                            
                         >
                             Painter &amp; Illustrator
-                        </a>
+                        </NavLink>
                         <button
                             style={{ fontSize: "1.6em" }}
                             className="navbar-toggler ms-auto mt-1"
