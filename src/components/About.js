@@ -11,7 +11,7 @@ export default function About() {
             {/* About */}
             <div className="container container-fluid d-none d-lg-block">
                 <div className="TextRow row-2 mt-5 mx-auto">
-                    <h1 className='animate__animated animate__backInUp' style={{ userSelect: 'none' }}>haqqımda</h1>
+                    <h1 style={{ userSelect: 'none' }}>haqqımda</h1>
                 </div>
                 <hr className='text-white mt-5 ' />
                 <div className='row w-100 bg-transparent mt-5'>

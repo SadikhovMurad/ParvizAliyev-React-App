@@ -18,9 +18,9 @@ export default function Gallery() {
     return (
         <>
             {/* GALLERY */}
-            <div id="Gallery" className="mt-5 container container-fluid  d-none d-lg-block  text-white text-center">
+            <div id="Gallery" className="mt-5  container container-fluid  d-none d-lg-block  text-white text-center">
                 <div className="TextRow row-2 mt-5 mx-auto">
-                    <h1 className='animate__animated animate__backInUp' style={{ userSelect: 'none' }}>gallery</h1>
+                    <h1 style={{ userSelect: 'none' }}>gallery</h1>
                 </div>
                 <div className="myWork container container-fluid row mt-5 mx-auto text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto
@@ -87,7 +87,7 @@ export default function Gallery() {
             {/* Gallery page for tablet */}
             <div id='GalleryForTablet' className='mt-5 container container-fluid  text-white text-center  d-none d-sm-block d-lg-none'>
                 <div className="TextRow row-2 mt-5 mx-auto">
-                    <h1 className='animate__animated animate__backInUp' style={{ userSelect: 'none' }}>gallery</h1>
+                    <h1 style={{ userSelect: 'none' }}>gallery</h1>
                 </div>
                 <div className="myWork container container-fluid row mt-5 mx-auto text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto
@@ -211,7 +211,7 @@ export default function Gallery() {
             {/* Gallery page for Phone */}
             <div id='GalleryForPhone' className='mt-5 container container-fluid  text-white text-center d-block d-sm-none d-md-none'>
                 <div className="TextRow row-2 mt-5 mx-auto">
-                    <h1 className='animate__animated animate__backInUp' style={{ userSelect: 'none', fontSize: '3em' }}>gallery</h1>
+                    <h1 style={{ userSelect: 'none', fontSize: '3em' }}>gallery</h1>
                 </div>
                 <div className="myWork container container-fluid row mt-5 mx-auto text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto

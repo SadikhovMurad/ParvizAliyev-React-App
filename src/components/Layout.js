@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 
 export default function Layout() {
 
-
+    
     return (
         <>
             {/* Navbar */}
@@ -128,12 +128,12 @@ export default function Layout() {
                             <div className="offcanvas-body d-flex justify-content-center align-items-center">
                                 <ul className="navbar-nav mx-auto text-center h-100">
                                     <li className="nav-item mt-auto">
-                                        <NavLink id='link' to="/Gallery" className="textResponsiveNavbar text-white">
+                                        <NavLink data-bs-dismiss="offcanvas" id='link' to="/Gallery" className="textResponsiveNavbar text-white">
                                             GALLERY
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink id='link' to="/About" className="textResponsiveNavbar text-white">
+                                        <NavLink data-bs-dismiss="offcanvas" id='link' to="/About" className="textResponsiveNavbar text-white">
                                             ABOUT
                                         </NavLink>
                                     </li>
@@ -168,8 +168,8 @@ export default function Layout() {
                             className="navbar-toggler ms-auto mt-1"
                             type="button"
                             data-bs-toggle="offcanvas"
-                            data-bs-target="#navbarNavOffCanvas"
-                            aria-controls="navbarNavOffCanvas"
+                            data-bs-target="#navbarNavOffCanvas1"
+                            aria-controls="navbarNavOffCanvas1"
                             aria-expanded="false"
                             aria-label="Toggle navigation"
                         >
@@ -180,7 +180,7 @@ export default function Layout() {
                         style={{ backgroundColor: "#161A30", transitionDuration: "0.3s" }}
                         className="offcanvas offcanvas-top ms-auto d-xl-none w-100 h-100"
                         tabIndex={-1}
-                        id="navbarNavOffCanvas"
+                        id="navbarNavOffCanvas1"
                         aria-labelledby="offcanvasNavbarLabel"
                     >
                         <div className="offcanvas-header">
@@ -208,12 +208,12 @@ export default function Layout() {
                         <div className="offcanvas-body d-flex justify-content-center align-items-center">
                             <ul className="navbar-nav mx-auto text-center h-100">
                                 <li className="nav-item mt-auto">
-                                    <NavLink id='link' to="/Gallery" className="textResponsiveNavbar text-white">
+                                    <NavLink data-bs-dismiss="offcanvas" id='link' to="/Gallery" className="textResponsiveNavbar text-white">
                                         GALLERY
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink id='link' to="/About" className="textResponsiveNavbar text-white">
+                                    <NavLink data-bs-dismiss="offcanvas" id='link' to="/About" className="textResponsiveNavbar text-white">
                                         ABOUT
                                     </NavLink>
                                 </li>
