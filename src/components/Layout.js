@@ -157,7 +157,7 @@ export default function Layout() {
                             style={{
                                 fontFamily: '"Inconsolata", monospace',
                                 color: "white",
-                                fontSize: "1.2em"
+                                fontSize: "1em"
                             }}
                             className="navbar-brand d-block d-sm-none me-2 mt-1  w-75"
 
