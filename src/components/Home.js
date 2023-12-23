@@ -1,4 +1,4 @@
-import React ,{useRef} from "react"
+import React, { useRef } from "react"
 import personalimage from '../Images and videos/Personalimage.jpeg'
 
 
@@ -125,9 +125,9 @@ export default function Home() {
                     <div className="col mt-4 ms-5 ">
                         <img
                             id="personalImage"
-                            src= {personalimage}
-                             width={400}
-                             height={520}
+                            src={personalimage}
+                            width={400}
+                            height={520}
                         />
                     </div>
                 </div>
@@ -196,7 +196,7 @@ export default function Home() {
                         <img
                             id="personalImage"
                             className="w-75 h-75 mx-auto"
-                            src= {personalimage}
+                            src={personalimage}
                             width={300}
                             height={450}
                         />
@@ -350,13 +350,14 @@ export default function Home() {
           text-decoration: none;" class="mt-3 mx-auto text-center ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima quae expedita, officiis nam molestias neque officia tenetur doloremque reprehenderit? Autem delectus natus cumque dolores ratione obcaecati officia dignissimos magni.
           </p> */}
+                        <hr className='text-white mt-4 ' />
                         <div
                             style={{
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center"
                             }}
-                            className="mt-3 mb-5"
+                            className="mb-3"
                         >
                             <a
                                 style={{ cursor: "pointer" }}
@@ -399,6 +400,7 @@ export default function Home() {
                                 <i className="bi bi-whatsapp" />
                             </a>
                         </div>
+                        <hr style={{ color: "transparent" }} />
                     </div>
                 </div>
             </div>

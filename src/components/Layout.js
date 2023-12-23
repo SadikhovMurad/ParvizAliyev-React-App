@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 
 export default function Layout() {
 
-    
+
     return (
         <>
             {/* Navbar */}
@@ -24,7 +24,7 @@ export default function Layout() {
                                 fontSize: "1.7em"
                             }}
                             className="navbar-brand me-2 "
-                            href="#scrollToHome"
+
                         >
                             PAINTER & ILLUSTRATOR
                         </NavLink>
@@ -80,7 +80,7 @@ export default function Layout() {
                                 fontSize: "1.4em"
                             }}
                             className="responsiveNavbarBrand navbar-brand d-none d-sm-block d-xl-none me-2  w-75"
-                            
+
                         >
                             Painter &amp; Illustrator
                         </NavLink>
@@ -126,8 +126,13 @@ export default function Layout() {
                             </div>
                             <hr className="d-md-none" />
                             <div className="offcanvas-body d-flex justify-content-center align-items-center">
-                                <ul className="navbar-nav mx-auto text-center h-100">
-                                    <li className="nav-item mt-auto">
+                                <ul className="navbar-nav d-flex justify-content-center mx-auto text-center h-100">
+                                    <li className="nav-item">
+                                        <NavLink data-bs-dismiss="offcanvas" id='link' to="/" className="textResponsiveNavbar text-white">
+                                            HOME
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
                                         <NavLink data-bs-dismiss="offcanvas" id='link' to="/Gallery" className="textResponsiveNavbar text-white">
                                             GALLERY
                                         </NavLink>
@@ -137,11 +142,7 @@ export default function Layout() {
                                             ABOUT
                                         </NavLink>
                                     </li>
-                                    <li className="nav-item mt-auto">
-                                        <a className="bookMe btn btn-outline-light" href="#">
-                                            BOOK ME!
-                                        </a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -159,7 +160,7 @@ export default function Layout() {
                                 fontSize: "1.2em"
                             }}
                             className="navbar-brand d-block d-sm-none me-2 mt-1  w-75"
-                            
+
                         >
                             Painter &amp; Illustrator
                         </NavLink>
@@ -206,8 +207,13 @@ export default function Layout() {
                         </div>
                         <hr className="d-md-none" />
                         <div className="offcanvas-body d-flex justify-content-center align-items-center">
-                            <ul className="navbar-nav mx-auto text-center h-100">
-                                <li className="nav-item mt-auto">
+                            <ul className="navbar-nav d-flex justify-content-center my-auto text-center h-100">
+                                <li className="nav-item">
+                                    <NavLink data-bs-dismiss="offcanvas" id='link' to="/" className="textResponsiveNavbar text-white">
+                                        HOME
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
                                     <NavLink data-bs-dismiss="offcanvas" id='link' to="/Gallery" className="textResponsiveNavbar text-white">
                                         GALLERY
                                     </NavLink>
@@ -217,11 +223,7 @@ export default function Layout() {
                                         ABOUT
                                     </NavLink>
                                 </li>
-                                <li className="nav-item mt-auto">
-                                    <a className="bookMe btn btn-outline-light" href="#">
-                                        BOOK ME!
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>

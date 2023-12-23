@@ -89,6 +89,7 @@ export default function Gallery() {
                 <div className="TextRow row-2 mt-5 mx-auto">
                     <h1 style={{ userSelect: 'none' }}>gallery</h1>
                 </div>
+                <hr className='text-white mt-5 ' />
                 <div className="myWork container container-fluid row mt-5 mx-auto text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto
                     sunt ullam nisi repudiandae. Voluptatum, cumque fugit dolores possimus,
@@ -103,6 +104,7 @@ export default function Gallery() {
                         <iframe src='https://res.cloudinary.com/dkeckqqcp/video/upload/v1702072803/parvizaliyev/workvideo2_1_ee46qw.mp4' height="300" />
                     </div>
                 </div>
+                <hr className='text-white mt-5 ' />
                 <div className="myWork container container-fluid row mt-5 mx-auto text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto
                     sunt ullam nisi repudiandae. Voluptatum, cumque fugit dolores possimus,
@@ -117,7 +119,7 @@ export default function Gallery() {
                         <iframe src='https://res.cloudinary.com/dkeckqqcp/video/upload/v1702072803/parvizaliyev/workvideo2_1_ee46qw.mp4' height="300" />
                     </div>
                 </div>
-
+                <hr className='text-white mt-5 ' />
                 <div style={{ fontSize: "1.7em" }} className="myWork container container-fluid mt-5">
                     Bunlar mənim təhvil verdiyim bəzi işlərdir
                 </div>
@@ -213,6 +215,7 @@ export default function Gallery() {
                 <div className="TextRow row-2 mt-5 mx-auto">
                     <h1 style={{ userSelect: 'none', fontSize: '3em' }}>gallery</h1>
                 </div>
+                <hr className='text-white mt-5 ' />
                 <div className="myWork container container-fluid row mt-5 mx-auto text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto
                     sunt ullam nisi repudiandae. Voluptatum, cumque fugit dolores possimus,
@@ -227,6 +230,7 @@ export default function Gallery() {
                         <iframe src='https://res.cloudinary.com/dkeckqqcp/video/upload/v1702072803/parvizaliyev/workvideo2_1_ee46qw.mp4' height="300" />
                     </div>
                 </div>
+                <hr className='text-white mt-5 ' />
                 <div className="myWork container container-fluid row mt-5 mx-auto text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto
                     sunt ullam nisi repudiandae. Voluptatum, cumque fugit dolores possimus,
@@ -241,6 +245,7 @@ export default function Gallery() {
                         <iframe src='https://res.cloudinary.com/dkeckqqcp/video/upload/v1702072803/parvizaliyev/workvideo2_1_ee46qw.mp4' height="300" />
                     </div>
                 </div>
+                <hr className='text-white mt-5 ' />
                 <div style={{ fontSize: "1.5em" }} className="myWork container container-fluid mt-5">
                     Bunlar mənim təhvil verdiyim bəzi işlərdir
                 </div>
