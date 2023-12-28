@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/* .BodyDiv {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #161A30;
-} */
 
+.glbutton {
+    font-size: 1.7em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 1px solid #3081D0;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+}
 
-/* #Gallery{
-    background-color: #161A30;
-    height: 100vh;
-} */
+.glbuttonActive{
+    font-size: 1.7em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #161A30;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+
+.glbutton:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: #161A30;
+    transition-duration: 0.3s;
+}
 
 
 .textResponsiveNavbar {
@@ -53,6 +71,7 @@
     width: 100%;
     transition-duration: 0.3s;
 }
+
 
 #personalImage {
     border-color: white;
@@ -157,17 +176,17 @@
     width: 0%;
     position: absolute;
     left: 0;
-    bottom:0;
+    bottom: 0;
     z-index: -1;
     transition-duration: 0.5s;
 }
 
-.button:hover span{
+.button:hover span {
     width: 100%;
     transition-duration: 0.5s;
 }
 
-.button:hover{
+.button:hover {
     border: none;
 }
 

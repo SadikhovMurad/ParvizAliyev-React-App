@@ -10,17 +10,25 @@ import work7 from '../Images and videos/work7.jpeg';
 import work8 from '../Images and videos/work8.jpeg';
 import work9 from '../Images and videos/work9.jpeg';
 import workVideo2Ogg from '../Images and videos/workvideo2.ogg';
+import GalleryLayout from './GalleryLayout';
+import { Link } from 'react-router-dom';
 
 
-
-
-export default function Gallery() {
+export default function GraffitiGallery() {
     return (
         <>
-            {/* GALLERY */}
+            {/* Graffiti GALLERY */}
             <div id="Gallery" className="mt-5  container container-fluid  d-none d-lg-block  text-white text-center">
                 <div className="TextRow row-2 mt-5 mx-auto">
                     <h1 style={{ userSelect: 'none' }}>gallery</h1>
+                </div>
+                <div className='w-75 d-flex justify-content-center mx-auto'>
+                    <Link id='gb1' className='glbutton glbuttonActive w-50' to="/GraffitiGallery">
+                        Graffiti
+                    </Link>
+                    <Link id='gb2' className='glbutton ms-3 w-50' to="/TattooGallery">
+                        Tattoo
+                    </Link>
                 </div>
                 <div className="myWork container container-fluid row mt-5 mx-auto text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto
@@ -84,7 +92,7 @@ export default function Gallery() {
                 </div>
             </div>
 
-            {/* Gallery page for tablet */}
+            {/* Graffiti Gallery page for tablet */}
             <div id='GalleryForTablet' className='mt-5 container container-fluid  text-white text-center  d-none d-sm-block d-lg-none'>
                 <div className="TextRow row-2 mt-5 mx-auto">
                     <h1 style={{ userSelect: 'none' }}>gallery</h1>
@@ -210,7 +218,7 @@ export default function Gallery() {
                 <hr style={{ color: "transparent" }} />
             </div>
 
-            {/* Gallery page for Phone */}
+            {/* Graffiti Gallery page for Phone */}
             <div id='GalleryForPhone' className='mt-5 container container-fluid  text-white text-center d-block d-sm-none d-md-none'>
                 <div className="TextRow row-2 mt-5 mx-auto">
                     <h1 style={{ userSelect: 'none', fontSize: '3em' }}>gallery</h1>

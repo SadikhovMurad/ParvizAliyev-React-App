@@ -1,5 +1,4 @@
 import './Static files/template.css'
-import Gallery from './Gallery'
 import { NavLink } from 'react-router-dom'
 import { useEffect } from 'react'
 
@@ -46,13 +45,14 @@ export default function Layout() {
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item ms-3 ">
                                     <NavLink to="/Gallery"
-                                        className="text1"
+                                        className="text1 "
                                         aria-current="page"
-                                        href={Gallery}
+
                                     >
                                         GALLERY
                                     </NavLink>
                                 </li>
+
                                 <li className="nav-item ms-3">
                                     <NavLink to="/About" className="text1" href="#scrollToAbout">
                                         ABOUT

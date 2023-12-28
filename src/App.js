@@ -2,9 +2,10 @@ import './App.css';
 import Layout from './components/Layout';
 import Home from './components/Home'
 import { Routes, Route } from 'react-router-dom';
-import Gallery from './components/Gallery';
 import About from './components/About';
-// import myContext from './components/myContext';
+import GalleryLayout from './components/GalleryLayout';
+import GraffitiGallery from './components/GraffitiGallery';
+import TattooGallery from './components/TattooGallery';
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
         {/* <Home /> */}
         <Routes>
           <Route index element={<Home />} />
-          <Route path="Gallery" element={<Gallery />} />
+          <Route path="Gallery" element={<GalleryLayout />} />
+          <Route path="GraffitiGallery" element={<GraffitiGallery />} />
+          <Route path="TattooGallery" element={<TattooGallery />} />
           <Route path="About" element={<About />} />
         </Routes>
 
